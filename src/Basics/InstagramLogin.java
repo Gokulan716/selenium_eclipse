@@ -25,12 +25,12 @@ public class InstagramLogin {
             WebElement usernameField = new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='username']")));
             usernameField.click();
-            usernameField.sendKeys("gokulan716@gmail.com");
+            usernameField.sendKeys("test@gmail.com");
 
             // Locate the password input field
             WebElement passwordField = driver.findElement(By.xpath("//input[@name='password']"));
             passwordField.click();
-            passwordField.sendKeys("#Jegok"); 
+            passwordField.sendKeys("tes"); 
 
             // Locate the submit button and click it
             WebElement loginButton = driver.findElement(By.xpath("//button[@type='submit']"));
