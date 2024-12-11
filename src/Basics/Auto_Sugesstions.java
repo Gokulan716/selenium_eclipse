@@ -18,7 +18,7 @@ public class Auto_Sugesstions {
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//ul[@id='ui-id-1']/li")));
         List<WebElement> values = driver.findElements(By.xpath("//ul[@id='ui-id-1']/li"));
 	    System.out.println(values.size());	    
-	    System.out.println("Available Suggestions:");
+	    System.out.println("Available Suggestions are:");
           for( int i=0; i<values.size(); i++){
         	  System.out.println(values.get(i).getText());
           }     
