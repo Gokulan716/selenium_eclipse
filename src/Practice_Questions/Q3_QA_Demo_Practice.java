@@ -1,13 +1,22 @@
 package Practice_Questions;
+import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.google.common.io.Files;
+
+import org.apache.commons.io.FileUtils; 
 
 public class Q3_QA_Demo_Practice {
 	
@@ -37,16 +46,14 @@ public class Q3_QA_Demo_Practice {
 		Select sy= new Select(Ydrop);
 		sy.selectByValue("1998");
 		driver.findElement(By.xpath("//div[@aria-label='Choose Thursday, September 17th, 1998']")).click();
-		/*WebElement Subject= driver.findElement(By.xpath("//div[@class='subjects-auto-complete__value-container subjects-auto-complete__value-container--is-multi css-1hwfws3']"));
+		WebElement checkboxes= driver.findElement(By.xpath("//label[@for='hobbies-checkbox-1']"));
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOf(Subject));
-		Subject.click();
-		Subject.sendKeys("EG");*/
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//label[normalize-space()='Sports']")).click();
+		wait.until(ExpectedConditions.visibilityOf(checkboxes));
+		driver.findElement(By.xpath("//label[@for='hobbies-checkbox-1']")).click();
 		driver.findElement(By.xpath("//label[normalize-space()='Reading']")).click();
 		driver.findElement(By.xpath("//input[@id='uploadPicture']")).click();
 		
+		 
 		
 	}
 
