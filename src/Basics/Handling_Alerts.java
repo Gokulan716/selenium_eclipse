@@ -18,7 +18,7 @@ public class Handling_Alerts {
 		   driver.findElement(By.xpath("//input[@id='alertbtn']")).click();
 		   Alert popup=driver.switchTo().alert();
 		  System.out.println(popup.getText());
-		  Thread.sleep(2000);
+		  Thread.sleep(1000);
 		   popup.accept();
 		   
 		   //confirmation alert pop-up

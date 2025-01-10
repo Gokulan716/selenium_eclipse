@@ -53,8 +53,5 @@ public class Q3_QA_Demo_Practice {
 		driver.findElement(By.xpath("//label[normalize-space()='Reading']")).click();
 		driver.findElement(By.xpath("//input[@id='uploadPicture']")).click();
 		
-		 
-		
-	}
-
+		 }
 }

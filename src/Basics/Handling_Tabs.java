@@ -13,6 +13,7 @@ public class Handling_Tabs {
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		
 		String parenttab =driver.getTitle();
+	 
 		
 		driver.findElement(By.xpath("//a[@id='opentab']")).click();
 		
