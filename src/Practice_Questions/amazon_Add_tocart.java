@@ -32,9 +32,9 @@ public static void main(String [] args)  {
    
     wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='add-to-cart-button']"))).click();
     
-    // driver.quit();
+     driver.quit();
 
-	//driver.findElement(By.xpath("//input[@id='add-to-cart-button']")).click();
+
 }
 
 }
